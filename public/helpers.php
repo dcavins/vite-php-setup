@@ -13,6 +13,7 @@
 define('IS_DEVELOPMENT', true);
 
 
+
 function vite($entry): string
 {
     return jsTag($entry)
@@ -35,6 +36,17 @@ function jsTag(string $entry): string
     return '<script type="module" crossorigin src="'
         . $url
         . '"></script>';
+}
+
+function jsUrl( string $entry ) {
+    $url = IS_DEVELOPMENT
+        ? 'http://localhost:3131/' . $entry
+        : assetUrl($entry);
+
+    if (!$url) {
+        return '';
+    }
+    return $url;
 }
 
 function jsPreloadImports(string $entry): string

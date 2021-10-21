@@ -49,3 +49,7 @@ So you can have:
 
 - A single Vite [multi-page setup](https://vitejs.dev/guide/build.html#multi-page-app).
 - A shared Vite setup, but outputing different entries in separated build steps, [example here](https://github.com/wp-bond/boilerplate/blob/master/app/themes/boilerplate/package.json).
+
+### To work with the shortcode example in WordPress
+
+Add the shortcode `vite-shortcode-test` to a page. In your terminal, `cd` into the included vite directory, run `npm install` then `npm run dev`. Visit the page using your shortcode and the Vue example code should appear.

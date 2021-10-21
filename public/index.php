@@ -15,24 +15,24 @@ require_once __DIR__ . '/helpers.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
 
-    <?= vite('main.js') ?>
+    <?php echo vite('main.js') ?>
 
 </head>
 
 <body>
-    <?= '<p class="message">PHP output here, potentially large HTML chunks</p>' ?>
+    <p class="message">PHP output here, potentially large HTML chunks</p>
 
     <div class="vue-app">
         <hello-world msg="header"></hello-world>
     </div>
 
-    <?= '<p class="message">PHP output here, potentially large HTML chunks</p>' ?>
+    <?php echo '<p class="message">PHP output here, potentially large HTML chunks</p>' ?>
 
     <div class="vue-app">
         <hello-world msg="footer"></hello-world>
     </div>
 
-    <?= '<p class="message">PHP output here, potentially large HTML chunks</p>' ?>
+    <?php echo '<p class="message">PHP output here, potentially large HTML chunks</p>' ?>
 </body>
 
 </html>
