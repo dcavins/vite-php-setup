@@ -26,7 +26,7 @@ function vite($entry): string
 function jsTag(string $entry): string
 {
     $url = IS_DEVELOPMENT
-        ? 'http://localhost:3000/' . $entry
+        ? 'http://localhost:3131/' . $entry
         : assetUrl($entry);
 
     if (!$url) {
